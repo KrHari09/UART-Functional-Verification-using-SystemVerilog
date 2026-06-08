@@ -9,7 +9,6 @@
 ![Methodology](https://img.shields.io/badge/Methodology-Constrained%20Random-purple?style=for-the-badge)
 ![Coverage](https://img.shields.io/badge/Functional%20Coverage-92.92%25-brightgreen?style=for-the-badge)
 ![Status](https://img.shields.io/badge/Status-All%20Tests%20Passed-brightgreen?style=for-the-badge&logo=checkmarx)
-![Duration](https://img.shields.io/badge/Duration-Aug%202025%20–%20Dec%202025-lightgrey?style=for-the-badge)
 
 </div>
 ---
