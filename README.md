@@ -79,7 +79,8 @@ Baud rate defines the number of bits transmitted per second. Both transmitter an
 
 
 ### 2.3 Timing Diagram
-<img width="1440" height="540" alt="image" src="https://github.com/user-attachments/assets/9a1656a5-8ac1-4b6d-9eea-854920a7b89e" />
+<img width="1440" height="580" alt="image" src="https://github.com/user-attachments/assets/22693d4d-ac51-48cf-bbd1-76012da6cc7d" />
+
 
 
 
