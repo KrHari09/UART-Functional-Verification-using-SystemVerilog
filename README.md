@@ -58,3 +58,26 @@ UART is a serial, **asynchronous**, full-duplex communication protocol. "Asynchr
 A UART data frame consists of the following fields transmitted serially, LSB first:
 <img width="1440" height="466" alt="image" src="https://github.com/user-attachments/assets/8a980cde-d4ce-475d-89b9-0f1e7d67d94a" />
 
+
+| Field | Value | Duration | Description |
+|---|---|---|---|
+| **Idle** | HIGH (1) | Until transmission | Line rests high |
+| **Start Bit** | LOW (0) | 1 bit period | Signals start of frame |
+| **Data Bits** | D0–D7 | 8 bit periods | LSB first |
+| **Parity Bit** | Even/Odd | 1 bit period (optional) | Error detection |
+| **Stop Bit** | HIGH (1) | 1 bit period | Signals end of frame |
+
+### 2.2 Baud Rate
+
+Baud rate defines the number of bits transmitted per second. Both transmitter and receiver must match. Common values:
+
+| Baud Rate | Bit Period | Typical Use |
+|---|---|---|
+| 9,600 | 104.2 µs | Legacy / low-speed |
+| 115,200 | 8.68 µs | Most common |
+| 230,400 | 4.34 µs | High speed |
+
+
+
+
+
