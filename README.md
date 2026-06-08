@@ -24,3 +24,19 @@
 14. [References](#14-references)
 
 ---
+
+## 1. Introduction
+
+The **Universal Asynchronous Receiver/Transmitter (UART)** is one of the most widely used serial communication protocols in embedded systems, SoCs, and FPGA-based designs. Ensuring its correct functional behaviour under varied conditions — different baud rates, parity settings, back-to-back frames, and error injection — requires a rigorous, structured verification approach.
+
+This project implements a **complete SystemVerilog functional verification environment** for a parameterized UART module. The testbench applies industry-standard techniques including:
+
+- **Constrained Random Verification (CRV)** — automated generation of valid and boundary-condition test stimuli
+- **SystemVerilog Assertions (SVA)** — protocol-level property checking bound directly to DUT signals
+- **Functional Coverage** — `covergroup`/`coverpoint` tracking to measure test completeness
+- **Self-checking Scoreboard** — automatic pass/fail comparison of transmitted vs. received data
+- **Waveform Debugging** — VCD dump for GTKWave / ModelSim waveform analysis
+
+The goal is to achieve **≥ 90% functional coverage** across all defined scenarios and demonstrate zero mismatches between transmitted and received UART frames in a loopback configuration.
+
+---
