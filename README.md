@@ -11,7 +11,7 @@
 ![Status](https://img.shields.io/badge/Status-All%20Tests%20Passed-brightgreen?style=for-the-badge&logo=checkmarx)
 
 </div>
----
+
 
 ## Table of Contents
 
