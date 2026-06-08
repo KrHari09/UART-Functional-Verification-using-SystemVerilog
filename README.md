@@ -1,9 +1,17 @@
+<div align="center">
+
 # UART Functional Verification using SystemVerilog
 
-> **Academic Project** | Aug 2025 – Dec 2025  
-> **Domain:** VLSI Design Verification | **Tool:** ModelSim / QuestaSim / Icarus Verilog  
-> **Language:** SystemVerilog (IEEE 1800-2017)
+![Language](https://img.shields.io/badge/Language-SystemVerilog%20IEEE%201800--2017-blue?style=for-the-badge&logo=v)
+![Tool](https://img.shields.io/badge/Tool-ModelSim%20%7C%20QuestaSim-orange?style=for-the-badge)
+![Simulator](https://img.shields.io/badge/Simulator-Icarus%20Verilog-yellow?style=for-the-badge)
+![Type](https://img.shields.io/badge/Type-Functional%20Verification-red?style=for-the-badge)
+![Methodology](https://img.shields.io/badge/Methodology-Constrained%20Random-purple?style=for-the-badge)
+![Coverage](https://img.shields.io/badge/Functional%20Coverage-92.92%25-brightgreen?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-All%20Tests%20Passed-brightgreen?style=for-the-badge&logo=checkmarx)
+![Duration](https://img.shields.io/badge/Duration-Aug%202025%20–%20Dec%202025-lightgrey?style=for-the-badge)
 
+</div>
 ---
 
 ## Table of Contents
