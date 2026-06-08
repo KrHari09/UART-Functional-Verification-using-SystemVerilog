@@ -40,3 +40,12 @@ This project implements a **complete SystemVerilog functional verification envir
 The goal is to achieve **≥ 90% functional coverage** across all defined scenarios and demonstrate zero mismatches between transmitted and received UART frames in a loopback configuration.
 
 ---
+
+
+## 2. UART Protocol Background
+
+UART is a serial, **asynchronous**, full-duplex communication protocol. "Asynchronous" means there is no shared clock between transmitter and receiver — both ends must be pre-configured to use the **same baud rate**.
+
+### 2.1 Frame Structure
+
+A UART data frame consists of the following fields transmitted serially, LSB first:
