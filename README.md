@@ -56,3 +56,5 @@ UART is a serial, **asynchronous**, full-duplex communication protocol. "Asynchr
 ### 2.1 Frame Structure
 
 A UART data frame consists of the following fields transmitted serially, LSB first:
+<img width="1440" height="466" alt="image" src="https://github.com/user-attachments/assets/8a980cde-d4ce-475d-89b9-0f1e7d67d94a" />
+
