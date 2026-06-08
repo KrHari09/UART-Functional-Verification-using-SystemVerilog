@@ -83,6 +83,38 @@ Baud rate defines the number of bits transmitted per second. Both transmitter an
 
 
 
+> *Each bit is held stable for exactly one baud period (e.g., 8.68 µs at 115200 baud).*
+
+### 2.4 Parity
+
+- **Even parity:** parity bit set so total number of 1s in data + parity = even
+- **Odd parity:** parity bit set so total number of 1s = odd
+- If the received parity doesn't match, a **parity error** is flagged
+
+---
+
+## 3. Verification Objectives
+
+| # | Objective | Technique Used |
+|---|---|---|
+| 1 | Verify correct serialization of all 256 data patterns | Constrained Random + Directed |
+| 2 | Verify baud rate operation at 9600, 115200, 230400 | CRV with baud constraint |
+| 3 | Verify parity generation (even/odd) and error detection | CRV + SVA assertions |
+| 4 | Verify start bit LOW, stop bit HIGH at all times | SVA property checks |
+| 5 | Verify TX line held HIGH during idle | SVA |
+| 6 | Verify back-to-back frame transmission | Zero idle_cycles constraint |
+| 7 | Verify framing error detection on corrupted stop bit | Fault injection |
+| 8 | Achieve ≥ 90% functional coverage | Covergroups |
+| 9 | Zero scoreboard mismatches on 200+ transactions | Self-checking SB |
+
+---
+
+## 4. Testbench Architecture
+
+The testbench follows a **layered, component-based architecture** modelled after industry-standard OOP verification methodology.
+
+<img width="1440" height="1080" alt="image" src="https://github.com/user-attachments/assets/bfb13edb-bb0d-4412-862b-88e51f9bc2a7" />
+
 
 
 
